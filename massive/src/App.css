@@ -1,0 +1,357 @@
+/* src/components/Header.css */
+header {
+  background-color: #bc6c25;
+  padding: 20px;
+}
+
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode a {
+  color: #bb86fc;
+}
+
+/* Add more styles for dark mode as needed */
+
+/* Contoh untuk elemen lainnya jika diperlukan */
+.dark-mode header, .dark-mode header nav, .dark-mode header nav a  {
+  background-color: #6b8e23;
+  color: white;
+}
+
+.dark-mode body{
+  background-color: #333;
+}
+
+
+.dark-mode .recommendations,
+.dark-mode .hampers,
+.dark-mode .discount,
+.dark-mode .advantages,
+.dark-mode .testimonials, .dark-mode footer{
+  background-color: #333;
+  color: #333;
+}
+
+.dark-mode .card {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+.dark-mode .hero, .dark-mode .hero h1, 
+.dark-mode .advantage{
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .btn {
+  background-color: #bb86fc;
+  color: #121212;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fdfdfd;
+  font-weight: bold;
+  padding: 1rem;
+  display: inline-block;
+}
+
+nav ul li a:hover{
+  font-size: larger;
+  transition: 0.4s;
+}
+nav .icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav .icons span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f8e8d8;
+  color: #8b5e3c;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #6b8e23;
+  color: #fdfdfd;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Recommendations Section */
+.recommendations,
+.hampers,
+.discount,
+.advantages,
+.testimonials {
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  margin: 20px 0;
+}
+
+.recommendations h2,
+.hampers h2,
+.discount h2,
+.advantages h2,
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-list,
+.hamper-list,
+.promo-products,
+.advantage-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product,
+.hamper,
+.promo-product {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 calc(33% - 40px);
+  box-sizing: border-box;
+}
+
+.product img,
+.hamper img,
+.promo-product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.product h3,
+.hamper h3 {
+  margin: 10px 0;
+}
+
+.product p,
+.hamper p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+/* Discount Section */
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #fff9f1;
+  margin: 20px 0;
+}
+
+.discount p {
+  text-align: left;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.promo-products {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+}
+
+.promo-product {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.promo-product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.promo-product p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.promo-product span {
+  text-decoration: line-through;
+  color: #e74c3c;
+  margin-left: 10px;
+}
+
+/* Advantages Section */
+.advantage-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.advantage {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 calc(30% - 40px);
+  box-sizing: border-box;
+}
+
+.advantage h3 {
+  margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonial {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+}
+
+.customer-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.customer-name {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-text p {
+  margin: 10px 0;
+}
+
+.customer-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* src/components/Footer.css */
+footer {
+  background-color: #bc6c25;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}

@@ -1,0 +1,21 @@
+/* #ulasan-box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+#ulasan-box p{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0
+}
+/* #ulasan-box hr{
+    padding: 0;
+    margin: 0;
+} */
+
+#kolom-akhir{
+    padding-left: 3rem;
+    padding-top: 5rem;
+}
+#kolom-akhir h4, #kolom-akhir p{
+    font-size: 50px;
+}

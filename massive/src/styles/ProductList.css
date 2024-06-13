@@ -1,0 +1,20 @@
+/* styles/ProductList.css */
+
+.product-list-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.product-list {
+  display: flex;
+  overflow-x: hidden;
+  width: 930px; /* Width to show only three cards with some margin */
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 300px; /* Ensure the width matches the scrolling logic */
+  margin: 0 10px; /* Adjust the margin between cards */
+  display: inline-block; /* Ensure it stays inline to prevent wrapping */
+}

@@ -1,0 +1,26 @@
+.product-list .card {
+    background-color: #DDA15E;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .product-list .card img {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .product-list .card-title {
+    font-weight: bold;
+  }
+  
+  .product-list .card-text {
+    text-align: center;
+  }
+  
+  .product-list .btn-primary {
+    background-color: #6b8e23;
+    border: none;
+  }
+  

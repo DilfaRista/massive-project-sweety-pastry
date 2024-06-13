@@ -1,0 +1,27 @@
+/* Profile.css */
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    border: none;
+    /* background-color: tomato;     */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+/* .profile-container { 
+    width: 75px;
+    height: 75px;
+    background-color: tomato;
+} */
+
+
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+
+  }
+  
+  .btn-primary {
+    background-color: #6b8e23;
+    border-color: #6c757d;
+  }
+  

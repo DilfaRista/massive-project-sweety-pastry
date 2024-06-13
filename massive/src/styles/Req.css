@@ -1,0 +1,62 @@
+.product-container {
+    position: relative;
+    display: inline-block;
+    width: calc(23.33% - 20px);
+    /* adjust the width to fit 3 cards per row */
+    margin: 10px;
+}
+
+.checkbox {
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    /* adjust the left position to move it outside the card */
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    /* increase the padding to make it bigger */
+    border-radius: 50%;
+    transform: scale(1.5);
+    /* add a z-index to make it appear on top of the card */
+}
+
+.product {
+    height: 400px;
+    /* set a fixed height for the card */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    /* add a transition effect */
+}
+
+
+.product.checked {
+    background-color: #bc6c25;
+  }
+
+.product img {
+    width: 100%;
+    /* make the image width 100% of the card */
+    height: 150px;
+    /* adjust the height to fit the card */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h2 {
+    margin-top: 0;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+/* add this to make the cards wrap down */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

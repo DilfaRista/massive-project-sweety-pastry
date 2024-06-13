@@ -1,0 +1,11 @@
+.slick-vertical .slick-slide {
+    display: block;
+    height: 200px; /* adjust the height to your liking */
+    margin-bottom: 20px;
+  }
+  
+  .slick-vertical .slick-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
